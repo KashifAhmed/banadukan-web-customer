@@ -1,15 +1,38 @@
 .card{
     display: inline-block;
     margin: 10px;
-    width: 15rem;
-    height: 16rem;
+    height: 220px;
+    width: 200px;
     .card-img__wrapper{
-        height: 100px; 
+        height: 170px;
+        width: 80%; 
         padding: 10px;
         border-bottom: 1px solid rgba(0,0,0,.125);
+        display: inline-block;
+        position: relative;
+        .card-img-top{
+            max-height: 80px;
+            max-width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .category-tags{
+            position: absolute;
+            bottom: 10px;
+            left: -10px;
+            .badge{
+                margin: 0px 2.5px;
+                font-weight: 100;
+            }
+        }
+    }
+    .card-body{
+        padding: 10px;
     }
     .card-title{
-        text-align: left;
+        text-align: center;
         font-size: 14px;
     }
     .card-text{
