@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-
+  title = "Top Startups"
   startups = [{
     logo: 'https://rentmycar.pk/images/logo.png',
     title: 'rentmycar.pk',

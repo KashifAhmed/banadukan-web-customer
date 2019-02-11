@@ -1,0 +1,24 @@
+<!-- <div class="row">
+  <h2>{{title || 'Horizontal List Title Here'}}</h2>
+  <div class="input-group col-md-4">
+      <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
+      <span class="input-group-append">
+          <button class="btn btn-outline-secondary border-left-0 border" type="button">
+              <i class="fa fa-search"></i>
+          </button>
+        </span>
+  </div>
+</div> -->
+<div class="app-horizontal-list__container">
+  <div class="header__wrapper">
+      <h2 class="title">{{title || 'Enter Title Here'}}</h2>
+      <span class="view-all">View All</span>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="{{'Search from ' + title}}" aria-label="" aria-describedby="basic-addon1">
+        <fa-icon [icon]="faSearch" class="fa-lg"></fa-icon>
+      </div>
+  </div>
+  <div class="row flex-row flex-nowrap ">
+    <app-card *ngFor="let item of row" [item]="item"></app-card>
+  </div>
+</div>

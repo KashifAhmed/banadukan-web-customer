@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './feature/home/home.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { CardComponent } from './component/card/card.component';
+import { ListHorizontalComponent } from './component/list-horizontal/list-horizontal.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,13 @@ import { CardComponent } from './component/card/card.component';
     HeaderComponent,
     HomeComponent,
     SliderComponent,
-    CardComponent
+    CardComponent,
+    ListHorizontalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
