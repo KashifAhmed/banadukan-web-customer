@@ -1,8 +1,6 @@
 .app-horizontal-list__container{
-    width: 100%;
-    overflow-x: scroll;
     padding: 0px 20px;
-    margin: 10px 0px;
+    margin: 20px 0px;
 
     .header__wrapper{
         .title{
@@ -16,18 +14,27 @@
         }
         .input-group{
             width: 30%;
-            border: thin solid black;
+            border: 1px solid rgba(0,0,0,.125);
             display: inline-block;
-            float:right;
+            float: right;
+            border-radius: .25rem;
             input{
                 display: inline-block;
                 border: none;
-                width: calc(100% - 40px);
+                width: calc(100% - 35px);
                 &:focus{
                     box-shadow: none;
                 }
             }
+            fa-icon{
+                color: rgba(0,0,0,.125);
+            }
         }
     }
     
+    .scroll-list__wrapper{
+        overflow-x: hidden;
+        width: 100%;
+        margin:0px;
+    }
 }
