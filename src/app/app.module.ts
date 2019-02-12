@@ -10,6 +10,7 @@ import { HomeComponent } from './feature/home/home.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { CardComponent } from './component/card/card.component';
 import { ListHorizontalComponent } from './component/list-horizontal/list-horizontal.component';
+import { ItemDetailsComponent } from './feature/item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListHorizontalComponent } from './component/list-horizontal/list-horizo
     HomeComponent,
     SliderComponent,
     CardComponent,
-    ListHorizontalComponent
+    ListHorizontalComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
