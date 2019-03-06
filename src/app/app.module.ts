@@ -11,6 +11,10 @@ import { SliderComponent } from './component/slider/slider.component';
 import { CardComponent } from './component/card/card.component';
 import { ListHorizontalComponent } from './component/list-horizontal/list-horizontal.component';
 import { ItemDetailsComponent } from './feature/item-details/item-details.component';
+import { DetailHeaderComponent } from './feature/item-details/detail-header/detail-header.component';
+import { NewsComponent } from './feature/item-details/news/news.component';
+import { FaqComponent } from './feature/item-details/faq/faq.component';
+import { TeamComponent } from './feature/item-details/team/team.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ItemDetailsComponent } from './feature/item-details/item-details.compon
     SliderComponent,
     CardComponent,
     ListHorizontalComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    DetailHeaderComponent,
+    NewsComponent,
+    FaqComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

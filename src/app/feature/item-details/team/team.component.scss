@@ -1,0 +1,29 @@
+.team-detail__wrapper{
+    margin-top: 30px;
+    padding: 0px 20px;
+    .team-list__wrapper{
+        .member-info__wrapper{
+            border: thin solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 0px 10px;
+            .team-avatar{
+                width: 80px;
+                height: 80px;
+            }
+            .info__wrapper{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+                .name{
+                  font-size: 15px;
+                  margin-bottom: 5px;  
+                }
+                .title, .ref-link{
+                    font-size: 12px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
